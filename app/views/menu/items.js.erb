@@ -1,0 +1,8 @@
+$(".side-nav").empty();
+<% if @menu!=nil %>
+	$(".side-nav").append('<li><a href="#" data-menu_id="<%= @menu.parent_id %>" class="menu_with_subitems"  style="opacity:0;transition:opacity 1000ms lineer;"><i class="fa fa-chevron-left" aria-hidden="true"></i>НАЗАД</a></li>')
+<% end %>
+<% @menus.each do |menu|%>
+$(".side-nav").append('<li><a href="#" data-menu_id="<%= menu.id %>" class="menu_with_subitems" style="opacity:0;transition:opacity 1000ms lineer;"><i class="fa fa-chevron-right" aria-hidden="true"></i><%=menu.name%></a></li>')
+<% end %>
+$(".menu_with_subitems").fadeTo(1000,1);

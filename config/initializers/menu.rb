@@ -1,0 +1,1 @@
+ROOT_MENU = Menu.where(parent_id:nil)

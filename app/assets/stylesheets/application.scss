@@ -1,0 +1,13 @@
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "materialize/components/color";
+$primary-color: color("red", "accent-4") !default;
+$secondary-color: color("yellow", "base") !default;
+@import 'materialize';
+
+.pinned {
+    position: fixed !important;
+    width: 100%;
+    left:0;
+}
+@import 'mat.slider'

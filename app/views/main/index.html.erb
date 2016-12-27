@@ -1,0 +1,96 @@
+<article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-materialize-sass-version-for-rails-asset-pipeline" class="anchor" href="#materialize-sass-version-for-rails-asset-pipeline" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Materialize Sass version for Rails Asset Pipeline</h1>
+
+<p><a href="http://badge.fury.io/rb/materialize-sass"><img src="https://camo.githubusercontent.com/7ec06efbcc7d7a930c54693786b14bba4c08059c/68747470733a2f2f62616467652e667572792e696f2f72622f6d6174657269616c697a652d736173732e737667" alt="Gem Version" data-canonical-src="https://badge.fury.io/rb/materialize-sass.svg" style="max-width:100%;"></a></p>
+
+<p><code>materialize-sass</code> is a Sass powered version of <a href="http://materializecss.com">Materialize</a>, a modern responsive front-end framework based on Material Design.</p>
+
+<h2><a id="user-content-installation" class="anchor" href="#installation" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installation</h2>
+
+<p>In your Gemfile you need to add the <code>materialize-sass</code> gem:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">gem</span> <span class="pl-s"><span class="pl-pds">'</span>materialize-sass<span class="pl-pds">'</span></span></pre></div>
+
+<p><strong>NOTE:</strong> Ensure that the <code>sass-rails</code> gem is presented in your Gemfile.</p>
+
+<p>And then run the bundler and restart your server to make the files available through the pipeline:</p>
+
+<div class="highlight highlight-text-shell-session"><pre>$ <span class="pl-s1">bundle install</span></pre></div>
+
+<p>Or install it separately:</p>
+
+<div class="highlight highlight-text-shell-session"><pre>$ <span class="pl-s1">gem install materialize-sass</span></pre></div>
+
+<h2><a id="user-content-usage" class="anchor" href="#usage" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Usage</h2>
+
+<h3><a id="user-content-a-sass" class="anchor" href="#a-sass" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>a. Sass</h3>
+
+<p>Import Materialize styles in <code>app/assets/stylesheets/application.scss</code>:</p>
+
+<div class="highlight highlight-source-scss"><pre><span class="pl-k">@import</span> "<span class="pl-v">materialize</span>";</pre></div>
+
+<p><strong>NOTE:</strong> If you have just generated a new Rails application, it  may come with a <code>.css</code> file instead. If this file exists, it will be served instead of Sass, so remove it.</p>
+
+<div class="highlight highlight-text-shell-session"><pre>$ <span class="pl-s1">rm app/assets/stylesheets/application.css</span></pre></div>
+
+<p><strong>HINT:</strong> Override materialize color variable.</p>
+
+<p>Since materialize color scheme are declared in color.scss you should import the color.scss first. then you can override color variable just like this:</p>
+
+<div class="highlight highlight-source-scss"><pre><span class="pl-k">@import</span> "<span class="pl-v">materialize/components/color</span>";
+<span class="pl-smi">$primary-color</span>: <span class="pl-c1">color</span>(<span class="pl-s"><span class="pl-pds">"</span>blue<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>lighten-2<span class="pl-pds">"</span></span>) <span class="pl-k">!default</span>;
+<span class="pl-smi">$secondary-color</span>: <span class="pl-c1">color</span>(<span class="pl-s"><span class="pl-pds">"</span>yellow<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>base<span class="pl-pds">"</span></span>) <span class="pl-k">!default</span>;
+<span class="pl-k">@import</span> '<span class="pl-v">materialize</span>';</pre></div>
+
+<p>or</p>
+
+<p>You can import each component just like in this file below:
+<a href="https://github.com/mkhairi/materialize-sass/blob/master/app/assets/stylesheets/materialize.scss">https://github.com/mkhairi/materialize-sass/blob/master/app/assets/stylesheets/materialize.scss</a></p>
+
+<h3><a id="user-content-b-javascript" class="anchor" href="#b-javascript" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>b. JavaScript</h3>
+
+<p>Require Materialize javascripts in <code>app/assets/javascripts/application.js</code>:</p>
+
+<p>For turbolinks 5 users</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">//= require jquery</span>
+<span class="pl-c">//= require turbolinks</span>
+<span class="pl-c">//= require materialize-sprockets</span></pre></div>
+
+<p>For turbolinks classic users</p>
+
+<p>Add <a href="https://github.com/kossnocorp/jquery.turbolinks"><code>jquery-turbolinks</code></a> gem to Gemfile</p>
+
+<p><code>gem 'jquery-turbolinks'</code></p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">//= require jquery</span>
+<span class="pl-c">//= require jquery.turbolinks</span>
+<span class="pl-c">//= require materialize</span>
+<span class="pl-c">//= require turbolinks</span></pre></div>
+
+<p>For non turbolinks users</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">//= require jquery</span>
+<span class="pl-c">//= require materialize</span></pre></div>
+
+<h3><a id="user-content-c-extras" class="anchor" href="#c-extras" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>c. Extras</h3>
+
+<p><a href="http://materializecss.com/forms.html#range">noUiSlider</a></p>
+
+<p>in your application.scss</p>
+
+<div class="highlight highlight-source-scss"><pre><span class="pl-k">@import</span> "<span class="pl-v">materialize/extras/nouislider</span>";</pre></div>
+
+<p>in your application.js</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">//= require materialize/extras/nouislider</span></pre></div>
+
+<h2><a id="user-content-contributing" class="anchor" href="#contributing" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Contributing</h2>
+
+<ol>
+<li>Fork it ( <a href="https://github.com/mkhairi/materialize-sass/fork">https://github.com/mkhairi/materialize-sass/fork</a> )</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am 'Add some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create a new Pull Request</li>
+</ol>
+</article>
